@@ -38,7 +38,7 @@ Imports:
     AOI,
     climateR (>= 0.3.1)
 Remotes:
-    mikejohnson51/AOI,
+    ericnost/AOI,
     mikejohnson51/climateR
 Roxygen: list(markdown = TRUE, r6 = TRUE)
 RoxygenNote: 7.3.2
