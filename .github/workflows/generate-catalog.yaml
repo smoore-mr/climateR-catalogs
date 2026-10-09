@@ -109,9 +109,8 @@ jobs:
           if (Sys.getenv("CATALOGS_NETRC_LOGIN") == "" || Sys.getenv("CATALOGS_NETRC_PASSWORD") == "") {
               stop("NASA EarthData Credentials not found!")
           }
-
-          install.packages('rgdal')
-          install.packages('gifski')
+          
+          install.packages('gifski', type = 'binary')
 
           climateR::writeNetrc(login = Sys.getenv("CATALOGS_NETRC_LOGIN"), password = Sys.getenv("CATALOGS_NETRC_PASSWORD"), overwrite = TRUE)
           climateR::writeDodsrc()
